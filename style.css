@@ -1,0 +1,62 @@
+/* Fondo general con gradiente azul claro */
+body {
+  background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezados */
+h1,
+h2,
+h5 {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* Cards */
+.card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Botones */
+.btn-primary,
+.btn-success {
+  background-color: #0288d1;
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+  background-color: #0277bd;
+}
+
+/* Contenedor principal con margen */
+main.container {
+  padding-bottom: 2rem;
+}
+
+/* Input del buscador */
+#buscador-cocteles {
+  border-radius: 20px;
+  padding: 0.6rem 1rem;
+  border: 1px solid #90caf9;
+  outline: none;
+}
+
+/* Estilo para nav superior simple */
+nav a {
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #0288d1;
+}

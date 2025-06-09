@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Carta Principal</title>
+</head>
+<body>
+    <header class="text-left my-4">
+        <h1>
+        Menu</h1>
+        <nav class="position-absolute top-0 end-0 m-3 text-end">
+  <a href="pedidos.html" class="d-block text-decoration-none text-black small mb-1">Ver Pedido</a>
+  <a href="cocktail.html" class="d-block text-decoration-none text-black small">Ver Cócteles</a>
+</nav>
+    </header>
+    
+    <main class="container"></main>
+    <ul class="nav nav-tabs justify-content-left my-4" id="menuTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#appetizers" type="button">Appetizers</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#main-courses" type="button">Main Courses</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#desserts" type="button">Desserts</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" href="cocktail.html">Drinks</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="appetizers">
+        <div class="row" id="appetizers-container"></div>
+      </div>
+      <div class="tab-pane fade" id="main-courses">
+        <div class="row" id="main-courses-container"></div>
+      </div>
+      <div class="tab-pane fade" id="desserts">
+        <div class="row" id="desserts-container"></div>
+      </div>
+    </div>
+       
+        
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="platos.js"></script>
+    <script type="module" src="logica.js"></script>
+</body>
+</html>

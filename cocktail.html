@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cocktails</title>
+  </head>
+  <body>
+    <header class="text-left my-4">
+      <h1>Cocktails</h1>
+      <nav class="position-absolute top-0 end-0 m-3 text-end">
+        <a
+          href="index.html"
+          class="d-block text-decoration-none text-black small mb-1"
+          >Menú Principal</a
+        >
+        <a
+          href="pedidos.html"
+          class="d-block text-decoration-none text-black small"
+          >Ver Pedido</a
+        >
+      </nav>
+    </header>
+    <main class="container my-4">
+      <div class="mb-4">
+        <input
+          type="text"
+          id="buscador-cocteles"
+          class="form-control"
+          placeholder="Busca un cocktel..."
+        />
+      </div>
+      <div class="row" id="cocteles-container"></div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="cocktail.js"></script>
+  </body>
+</html>
